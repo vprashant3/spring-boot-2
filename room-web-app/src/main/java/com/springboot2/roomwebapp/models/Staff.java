@@ -1,4 +1,4 @@
-package com.learining.roomwebapp.models;
+package com.springboot2.roomwebapp.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

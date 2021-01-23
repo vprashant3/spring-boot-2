@@ -1,10 +1,8 @@
-package com.learining.roomwebapp.controllers;
+package com.springboot2.roomwebapp.controllers;
 
-import com.learining.roomwebapp.models.Room;
-import com.learining.roomwebapp.service.RoomService;
+import com.springboot2.roomwebapp.models.Room;
+import com.springboot2.roomwebapp.service.RoomService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,7 +18,7 @@ public class RoomRestController {
     RoomService roomService;
 
     @GetMapping
-    public List<Room> getAllRooms(Model model) {
+    public List<Room> getAllRooms() {
        return roomService.getAllRooms();
     }
 

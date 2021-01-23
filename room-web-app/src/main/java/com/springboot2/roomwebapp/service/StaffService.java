@@ -1,6 +1,6 @@
-package com.learining.roomwebapp.service;
+package com.springboot2.roomwebapp.service;
 
-import com.learining.roomwebapp.models.Staff;
+import com.springboot2.roomwebapp.models.Staff;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

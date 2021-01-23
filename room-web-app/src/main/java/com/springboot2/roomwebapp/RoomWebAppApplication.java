@@ -1,4 +1,4 @@
-package com.learining.roomwebapp;
+package com.springboot2.roomwebapp;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

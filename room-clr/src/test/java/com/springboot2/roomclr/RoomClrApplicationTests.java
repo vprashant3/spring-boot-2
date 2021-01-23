@@ -1,13 +1,13 @@
-package com.learining.roomwebapp;
+package com.springboot2.roomclr;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class RoomWebAppApplicationTests {
+class RoomClrApplicationTests {
 
-    @Test
-    void contextLoads() {
-    }
+	@Test
+	void contextLoads() {
+	}
 
 }
