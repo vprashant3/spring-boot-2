@@ -1,19 +1,18 @@
 package com.springboot2.roomwebapp.service;
 
+import com.springboot2.roomwebapp.data.StaffRepository;
 import com.springboot2.roomwebapp.models.Staff;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
 public class StaffService {
-    private static final List<Staff> staffs = new ArrayList<>();
-    static {
-        for(int i = 0; i < 10; i++) {
-            staffs.add(new Staff(Integer.toString(i), "First Name " +i, "Last Name "+i, "Position " +i));
-        }
+    private final StaffRepository staffRepository;
+
+    public StaffService(StaffRepository staffRepository) {
+        this.staffRepository = staffRepository;
     }
 
-    public List<Staff> getAllStaffs() {return staffs;}
+    public List<Staff> getAllStaffs() {return staffRepository.findAll();}
 }
